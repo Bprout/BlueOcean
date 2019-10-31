@@ -1,0 +1,14 @@
+Deploy a high-availability web app using CloudFormation.
+
+This project deploys a high availability web application via the AWS CloudFormation service. The file named bpudacityproject2.yml
+is the actual CloudFormation template and the file named parameters.json contains the parameters used. Also included is a file called
+createstack.sh which is a simple shell script that runs the AWS CLI create-stack command using the CFT, parameters file, and which also
+includes the "capabilities CAPABILITY_NAMED_IAM" request parameter which is needed due to the use of an IAM role.
+
+To run the shell script and launch the CloudFormation stack follow the below example.
+
+./createstack.sh <stackname> bpudacityproject2.yml parameters.json
+
+Please see the folder 'Screenshots' for images showing actual script execution and successful CloudFormation stack deployment.
+
+
